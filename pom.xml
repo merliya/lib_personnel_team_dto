@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.jbhunt.personnel</groupId>
+	<artifactId>lib_personnel_team_dto</artifactId>
+	<version>0.0.14</version>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<sonar.java.binaries>${basedir}</sonar.java.binaries>
+		<lombok.version>1.16.6</lombok.version>
+	</properties>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.jbhunt.personnel</groupId>
+			<artifactId>lib_personnel_schedule_dto</artifactId>
+			<version>0.0.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jbhunt.infrastructure</groupId>
+			<artifactId>lib_infrastructure_taskreferencedata_dto</artifactId>
+			<version>0.0.12</version>
+		</dependency>
+		<!-- ESA -->
+		<dependency>
+			<groupId>com.jbhunt</groupId>
+			<artifactId>lib_security_autoconfigure</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<!-- ESA -->
+	</dependencies>
+</project>
